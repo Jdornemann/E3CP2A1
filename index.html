@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad 006 - CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #ebebe0;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        row {
+            clear: both;
+        }
+
+        .col-md-1,
+        .col-md-2,
+        .col-md-3,
+        .col-md-4,
+        .col-md-5,
+        .col-md-6,
+        .col-md-7,
+        .col-md-8,
+        .col-md-9,
+        .col-md-10,
+        .col-md-11,
+        .col-md-12,
+        .col-sm-1,
+        .col-sm-2,
+        .col-sm-3,
+        .col-sm-4,
+        .col-sm-5,
+        .col-sm-6,
+        .col-sm-7,
+        .col-sm-8,
+        .col-sm-9,
+        .col-sm-10,
+        .col-sm-11,
+        .col-sm-12 {
+            float: left;
+        }
+
+        @media(max-width: 480px) {
+            .col-sm-1 {
+                width: 8.33%;
+            }
+            .col-sm-2 {
+                width: 16.6%;
+            }
+            .col-sm-3 {
+                width: 24.99%;
+            }
+            .col-sm-4 {
+                width: 33.32%;
+            }
+            .col-sm-5 {
+                width: 41.65%;
+            }
+            .col-sm-6 {
+                width: 49.98%;
+            }
+            .col-sm-7 {
+                width: 58.31%;
+            }
+            .col-sm-8 {
+                width: 66.64%;
+            }
+            .col-sm-9 {
+                width: 74.97%;
+            }
+            .col-sm-10 {
+                width: 83.3%;
+            }
+            .col-sm-11 {
+                width: 91.63%;
+            }
+            .col-sm-12 {
+                width: 100%;
+            }
+        }
+
+        @media(min-width: 481px) {
+            .col-md-1 {
+                width: 8.33%;
+            }
+            .col-md-2 {
+                width: 16.6%;
+            }
+            .col-md-3 {
+                width: 24.99%;
+            }
+            .col-md-4 {
+                width: 33.32%;
+            }
+            .col-md-5 {
+                width: 41.65%;
+            }
+            .col-md-6 {
+                width: 49.98%;
+            }
+            .col-md-7 {
+                width: 58.31%;
+            }
+            .col-md-8 {
+                width: 66.64%;
+            }
+            .col-md-9 {
+                width: 74.97%;
+            }
+            .col-md-10 {
+                width: 83.3%;
+            }
+            .col-md-11 {
+                width: 91.63%;
+            }
+            .col-md-12 {
+                width: 100%;
+            }
+        }
+
+        .container {
+
+            background-color: white;
+            margin-top: 10%;
+            margin-left: 10%;
+            margin-bottom: 10%;
+            width: 80vw;
+          
+            overflow:hidden;
+            padding-bottom: 10%;
+        }
+
+        .line {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto; 
+            width: 90%;
+            top: 1vh;
+        }
+
+        img {
+            border-radius: 200%;
+            max-width: 100%;
+            border: solid 9px #ebebe0;
+
+        }
+
+        .div-img {
+            top: -2%;
+            position: relative;
+            text-align: center;
+        }
+
+        .h-section {
+
+            color: rgb(255, 147, 6);
+            padding-left: 5%;
+            padding-right: 5%
+        }
+
+        .h-titulo {}
+
+        .p-section {
+            padding-left: 0px;
+            padding-right: 5%
+        }
+
+        .p-year {
+            padding-left: 5%;
+
+            float: left;
+        }
+
+        .p-titulo {
+            padding-left: 5%;
+            padding-right: 5%;
+
+        }
+
+        .bold {
+            font-weight: bold;
+
+
+        }
+
+        ul {
+            padding-left: 15%;
+        }
+
+        .box {
+
+            background-color: #ebebe0;
+            margin-left: 15%;
+            width: 80%;
+            border-radius: 0.2vh;
+            height: 20%;
+
+
+        }
+
+        .box-ex {
+
+
+            margin-left: 15%;
+            width: 80%;
+            border-radius: 0.2vh;
+            height: 20%;
+
+
+
+        }
+
+        .chart {
+
+            height: 3.5vh;
+            background-color: #ffad99;
+            color: white;
+            font-weight: bold;
+            padding-top: 1.5%;
+        }
+
+        .chart-1 {
+
+            width: 80%;
+            margin-bottom: 1%;
+            margin-left: 5%;
+            padding-left: 1%;
+
+        }
+
+        .chart-2 {
+
+            width: 60%;
+            margin-bottom: 1%;
+            margin-left: 5%;
+            padding-left: 1%;
+        }
+
+        .chart-3 {
+
+            width: 40%;
+            margin-bottom: 1vh;
+            margin-left: 5%;
+            padding-left: 1%;
+        }
+
+        .chart-4 {
+            width: 20%;
+            margin-bottom: 1%;
+            margin-left: 5%;
+            padding-left: 1%;
+        }
+
+        .chart-5 {
+            width: 10%;
+            margin-bottom: 1%;
+            margin-left: 5%;
+            padding-left: 1%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="div-img">
+            <img src="img/fotocv.jpg" alt="">
+            <h1>HOLA MI NOMBRE ES
+                <span style="color: orange">CLAUDIA</span> Y ESTE ES MI RESUMEN</h1>
+            <hr class="line">
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2 class="h-section">//ACERCA DE</h2>
+                <p class="p-titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos rerum, fuga laboriosam soluta harum quidem
+                    cum blanditiis, animi distinctio possimus, impedit suscipit magni. Iusto ad facilis, reprehenderit quis
+                    ea nulla!</p>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <h2 class="h-section">//CONTACTO</h2>
+
+                <ul>
+                    <li>
+                        <span class="bold">Email:</span> miguel@ewok.cl </li>
+                    <li>
+                        <span class="bold">Skype:</span> miguelcantillana</li>
+                    <li>
+                        <span class="bold">Twitter:</span>@miguelinux </li>
+                    <li>
+                        <span class="bold">Facebook:</span> /miguelcantillana </li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2 class="h-section">//EDUCACION</h2>
+                <p class="bold p-year">2018</p>
+                <div class="box">
+                    <P class="h-titulo bold">I was born in Katowice</P>
+                    <p class="p-edu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos rerum, fuga laboriosam soluta harum quidem
+                        cum blanditiis, animi distinctio possimus!</p>
+                </div>
+                <p class="bold p-year">2016</p>
+                <div class="box">
+
+                    <P class="h-titulo bold">I was born in Katowice</P>
+                    <p class="p-edu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos rerum, fuga laboriosam soluta harum quidem
+                        cum blanditiis, animi distinctio possimus!</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+                <h2 class="h-section">//SKILLS</h2>
+
+                <div class="chart chart-1">PYTHON</div>
+                <div class="chart chart-2">HTML</div>
+                <div class="chart chart-3">CSS</div>
+                <div class="chart chart-4">JS</div>
+                <div class="chart chart-5">PHP</div>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2 class="h-section">//EXPERIENCIA</h2>
+
+                <div class="box-ex">
+                    <P class="h-titulo bold">Front-End Developer / PHP Programmer</P>
+                    <p class="p-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illo dignissimos dolorum veritatis exercitationem
+                        eius officiis blanditiis dolore tempora obcaecati laudantium harum hic, earum doloribus ratione praesentium
+                        quae eum. Quis?</p>
+                </div>
+
+                <div class="box-ex ">
+                    <P class="h-titulo bold">Front-End Developer / PHP Programmer</P>
+                    <p class="p-section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat illo dignissimos dolorum veritatis exercitationem
+                        eius officiis blanditiis dolore tempora obcaecati laudantium harum hic, earum doloribus ratione praesentium
+                        quae eum. Quis?</p>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+
+
+                <div>
+                    <h2 class="h-section">//IDIOMAS</h2>
+                    <p style="display: inline; margin-right: 31.7%;">Inglés</p>
+                    <div style="display: inline;">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <hr>
+
+                    </div>
+
+
+                    <p style="display: inline;margin-right: 30%;">Español</p>
+                    <div style="display: inline; ">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+
+                        <hr>
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h2 class="h-section">//HOBBIES</h2>
+
+
+                    <figure style="display: inline; background-color: red; color: white; padding: 1%; margin-left: 1%">Fotografía</figure>
+                    <figure style="display: inline; background-color: red; color: white; padding: 1%; margin-left: 1%" >Deporte</figure>
+                    <figure style="display: inline; background-color: red; color: white; padding: 1%; margin-left: 1%"> Música</figure>
+                    </figure>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
